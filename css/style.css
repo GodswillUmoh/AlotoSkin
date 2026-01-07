@@ -1,0 +1,368 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 70px;
+}
+
+/* HERO */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  max-width: 520px;
+}
+
+/* PRODUCT SHOWCASE */
+.product-showcase {
+  position: relative;
+  width: 260px;
+  height: 320px;
+}
+
+.product-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.product-slide.active {
+  opacity: 1;
+}
+
+/* PRODUCTS */
+.products-section {
+  background: #fafafa;
+}
+
+.product-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-card .price {
+  font-weight: 600;
+  color: #0c6b58;
+}
+
+/* FOOTER */
+.footer {
+  background: #0c6b58;
+  color: #fff;
+}
+
+
+.hero-image img {
+  max-height: 520px;
+}
+
+.hero-content {
+  padding-right: 40px;
+}
+
+@media (max-width: 991px) {
+  .hero-content {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .product-showcase {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* PRODUCT SHOWCASE */
+.product-showcase {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.product-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.product-slide.active {
+  opacity: 1;
+}
+
+/* LADY + PRODUCT FLEX ALIGN */
+.lady-product-section .d-flex {
+  gap: 50px;
+}
+
+@media (max-width: 991px) {
+  .lady-product-section .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-showcase-wrapper {
+    margin-top: 30px;
+  }
+}
+
+
+/* Overlay behind hero text */
+.hero-banner .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45); /* dark semi-transparent */
+  z-index: 1;
+}
+
+/* Hero text styling */
+.hero-banner .hero-text {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Gradient Overlay for Hero Banner */
+.hero-banner .hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* Gradient: dark at bottom fading to transparent at top */
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.1));
+  z-index: 1;
+}
+
+/* Hero text styling */
+.hero-banner .hero-text {
+  color: #fff;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+  line-height: 1.2;
+}
+
+/* Optional: responsive text size */
+@media (max-width: 768px) {
+  .hero-banner .hero-text {
+    font-size: 2rem;
+  }
+}
+
+/* Hero text animation */
+.animated-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.5s ease-out forwards;
+  animation-delay: 0.5s; /* start half a second after page load */
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: make text slightly larger on bigger screens */
+@media (min-width: 1200px) {
+  .animated-text {
+    font-size: 4rem;
+  }
+}
+
+
+/* Looping hero text animation */
+.animated-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpLoop 4s ease-in-out infinite;
+}
+
+@keyframes fadeUpLoop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+
+.footer {
+  background: #0c6b58;
+  color: #fff;
+}
+
+.footer-link:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+.footer a {
+  transition: all 0.3s ease;
+}
+
+.footer i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.footer i:hover {
+  transform: scale(1.2);
+  color: #ffd700; /* subtle gold accent */
+}
+
+.footer hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+.footer a {
+  transition: all 0.3s ease;
+}
+
+.footer i {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer i:hover {
+  transform: scale(1.2);
+  color: #ffd700; /* subtle gold accent */
+}
+
+.footer hr {
+  border-color: rgba(255,255,255,0.2);
+}
+
+
+.hero-banner {
+  position: relative;
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+  font-size: 3rem;
+}
+
+.animated-text {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeLoop 6s infinite;
+}
+
+@keyframes fadeLoop {
+  0%, 25% {opacity: 0;}
+  30%, 70% {opacity: 1;}
+  75%, 100% {opacity: 0;}
+}
+
+
+.lady-product-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product-showcase-wrapper {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.product-slide {
+  transition: opacity 1s ease-in-out;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  border-radius: 10px;
+}
+
+
+.btn-outline-primary {
+  border: 2px solid #0c6b58;
+  color: #0c6b58;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(45deg, #0c6b58, #20c997);
+  border-color: transparent;
+  color: #fff;
+}
+
+.footer {
+  background: linear-gradient(135deg, #0c6b58, #138d75);
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ffd700;
+}
+
+.footer i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer i:hover {
+  transform: scale(1.2);
+}

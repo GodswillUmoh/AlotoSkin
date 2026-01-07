@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | AlotoSkin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <style>
+    /* Hero Header */
+    .page-header {
+      background-color: #0c6b58;
+      color: #fff;
+      padding: 100px 0 50px;
+      text-align: center;
+    }
+    .page-header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    /* Blog Card */
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .blog-card h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .blog-card p {
+      color: #555;
+    }
+    .blog-card a {
+      text-decoration: none;
+      color: #0c6b58;
+      font-weight: 500;
+    }
+    .blog-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">AlotoSkin</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO HEADER -->
+<section class="page-header">
+  <div class="container">
+    <h1>Skin Journal</h1>
+    <p class="lead">Insights, tips, and guides for radiant melanin-rich skin.</p>
+  </div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="blog-section py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Understanding Melanin-Rich Skin</h4>
+          <p>Why tailored skincare matters for deeper skin tones.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Daily Skincare Rituals</h4>
+          <p>How consistency transforms your skin.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Ingredients That Work</h4>
+          <p>Science-backed actives we trust.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Sun Protection Essentials</h4>
+          <p>Protecting melanin-rich skin from UV damage.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Hydration Tips for Healthy Skin</h4>
+          <p>Keeping skin supple and glowing all day.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <h4>Nighttime Skincare Routine</h4>
+          <p>Boosting repair and regeneration while you sleep.</p>
+          <a href="#">Read More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4 text-center text-md-start">
+        <h5 class="fw-bold mb-2">AlotoSkin</h5>
+        <p class="text-muted">Premium skincare crafted for melanin-rich skin worldwide.</p>
+      </div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <h6 class="fw-bold mb-2">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none footer-link">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none footer-link">About</a></li>
+          <li><a href="blog.html" class="text-white text-decoration-none footer-link">Blog</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4 text-center text-md-end">
+        <h6 class="fw-bold mb-2">Follow Us</h6>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center pt-3">
+      <p class="mb-0 text-muted small">© 2026 AlotoSkin. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
